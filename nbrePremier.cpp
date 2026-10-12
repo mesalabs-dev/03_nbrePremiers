@@ -54,7 +54,7 @@ int main()
             // Affichage du nombre premier
             if (isPrime)
             {
-                cout << setw(3) << i << " ";
+                cout << setw(3) << i << " "; // alignement des valeurs
                 c_col++;
                 if (c_col % n_col == 0){cout<<endl;} // retour à la ligne tous les 5 chiffres
             }
@@ -69,9 +69,9 @@ int main()
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
             cout << endl;
 
-        }while (restart != 'O' && restart != 'N' && restart != 'o' && restart != 'n');
+        }while (restart != 'O' && restart != 'N');
 
-    }while (restart == 'O' || restart == 'o');
+    }while (restart == 'O');
     cout << "Fin de programme" << endl;
 
     return EXIT_SUCCESS;
